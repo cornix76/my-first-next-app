@@ -1,5 +1,4 @@
-import Counter from './Counter';
-
+// app/about/page.tsx — Server Component (по умолчанию)
 async function getInfo() {
     return {
         title: 'О проекте',
@@ -13,7 +12,6 @@ export default async function AboutPage() {
         <main>
             <h1>{info.title}</h1>
             <p>{info.description}</p>
-            <Counter />
         </main>
     );
 }
